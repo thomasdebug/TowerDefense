@@ -1,4 +1,5 @@
 # GAMEPLAY
+ik had geen laatste build. unity wilde geen build maken omdat een script niet wilde doen door de code die ik had gebruikt.
 ![Gif gameplay](Final.gif)
 
 # Sprint 0 - Game Design Document : Tower Defense
