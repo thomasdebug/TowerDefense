@@ -30,7 +30,15 @@ public class TowerPlacement : MonoBehaviour
     {
         if (Tower != null) return;
 
-        GameObject towerToBuild = BuildManager.main.GetSelectedTower();
-        Tower = Instantiate(towerToBuild, transform.position, Quaternion.identity); 
+        Turret towerToBuild = BuildManager.main.GetSelectedTower();
+
+        if (towerToBuild.cost > LevelManager.main.currency)
+        {
+            return;
+        }
+
+        LevelManager.main.SpendCurrency(towerToBuild.cost);
+
+        Tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity); 
     }
 }

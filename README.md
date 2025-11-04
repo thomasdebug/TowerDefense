@@ -1,3 +1,6 @@
+# GAMEPLAY
+![Gif gameplay](Final.gif)
+
 # Sprint 0 - Game Design Document : Tower Defense
 Naam: Thomas Born
 
